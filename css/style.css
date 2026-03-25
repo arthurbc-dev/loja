@@ -37,3 +37,51 @@ h2{
     gap:30px;
     flex-wrap: wrap;
 }
+.popup-fundo{
+    display: none;
+    position: fixed;
+    top:0;left: 0;width: 100%;height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+.popup-caixa{
+    background-color: #E3DCD2;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+.botao-comprar{
+    background-color: #3A2A22;
+    color: #E3DCD2;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+.botao-comprar:hover{
+    background-color:#0f4712;
+}
+.botao-zap{
+    display: inline-block;
+    background-color: #25D366;
+    color:white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.botao-cancelar{
+    background-color: transparent;
+    border: none;
+    color: #3A2A22;
+    text-decoration:underline;
+    cursor: pointer;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+}

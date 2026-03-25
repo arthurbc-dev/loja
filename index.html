@@ -21,19 +21,46 @@
                 <h3>Produto 1</h3>
                 <p>Preço: R$50,00</p>
                 <img src="fotos/Flor.png" class="imagem-produto">
+                <button class="botao-comprar">Comprar</button>
             </article>
             <article class="produto">
                 <h3>Produto 2</h3>
                 <p>Preço: R$40,00</p>
                 <img src="fotos/Flor2.png" class="imagem-produto">
+                <button class="botao-comprar">Comprar</button>
             </article>
             <article class="produto">
                 <h3>Produto 3</h3>
                 <p>Preço: R$70,00</p>
                 <img src="fotos/Amigurumi.png" class="imagem-produto">
+                <button class="botao-comprar">Comprar</button>
             </article>
         </div>
     </section>
+    <div id="meu-popup" class="popup-fundo">
+        <div class="popup-caixa">
+            <h3>Fazer Pedido</h3>
+            <p>Você será levado para o WhatsApp para combinar os detalhes e a entrega. Deseja continuar?</p>
+            <a href="https://wa.me/557191691826?text=Olá!Gostaria de fazer um pedido da Arcal Croche." target="_blank"
+                class="botao-zap">
+                Sim, ir para o WhatsApp
+            </a>
+            <button id="fechar-popup" class="botao-cancelar">Cancelar</button>
+        </div>
+    </div>
+    <script>
+        const botoesComprar = document.querySelectorAll('.botao-comprar');
+        const fundoPopup = document.getElementById('meu-popup');
+        const botaoFechar = document.getElementById('fechar-popup');
+    botoesComprar.forEach(botao =>{
+        botao.addEventListener('click',()=>{
+            fundoPopup.style.display='flex';
+        })
+    })
+    botaoFechar.addEventListener('click',() =>{
+        fundoPopup.style.display='none';
+    })
+    </script>
 </body>
 
-</html>
+</html>Z
